@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div id="nav-placeholder"></div>
+<script>fetch('components/nav.html').then(r=>r.text()).then(d=>document.getElementById('nav-placeholder').innerHTML=d);</script>
+
+
+<section class="cart-container">
+<h2>Your Cart</h2>
+<div id="cart-items"></div>
+<h3 id="cart-total"></h3>
+<a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+</section>
+
+
+<footer>
+<p>© 2025 We Made It</p>
+</footer>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>

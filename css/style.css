@@ -1,0 +1,451 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+
+.navbar ul {
+display: flex;
+list-style: none;
+gap: 20px;
+}
+
+
+.navbar {
+    padding: 10px px;
+    background: rgb(224, 241, 162);
+    border-bottom: 1px solid #0a0707;
+}
+
+.navbar ul li a {
+    font-size: 18px;
+}
+.logo {
+    width: 40px;
+}
+
+
+.banner {
+position: relative;
+}
+
+
+.banner img {
+width: 100%;
+height: 450px;
+object-fit: cover;
+}
+
+.banner-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: rgb(85, 78, 78);
+text-align: center;
+}
+
+
+.products-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+padding: 40px;
+}
+
+
+.product-card {
+background: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+text-align: center;
+}
+
+
+.product-card img {
+width: 100%;
+border-radius: 10px;
+}
+
+
+.btn {
+display: inline-block;
+padding: 10px 20px;
+background: #c59d5f;
+color: white;
+border-radius: 5px;
+margin-top: 10px;
+}
+/* --- Global Styles (Optional but Recommended) --- */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light, soft background */
+    color: #333;
+}
+
+/* --- Navigation Placeholder Styling --- */
+/* Assuming nav.html contains your main navigation */
+#nav-placeholder {
+    width: 100%;
+    /* Add specific styling for your navigation here if needed */
+}
+
+
+/* === About Us Section Styling === */
+
+.about-container {
+    max-width: 800px; /* Constrain width for better readability */
+    margin: 40px auto; /* Center the container horizontally */
+    padding: 40px;
+    background-color: #fff; /* White background for the content box */
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+    text-align: center; /* Center the content within the container */
+}
+
+.about-container h2 {
+    font-size: 2.5em;
+    color: #5a5a8a; /* A pleasant, deep accent color */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0f0;
+}
+
+/* Style for the main mission paragraph */
+.about-container .mission {
+    font-size: 1.15em;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f0f0ff; /* Light background for the mission statement */
+    border-left: 5px solid #5a5a8a;
+    line-height: 1.8;
+}
+
+/* Style for the Core Values section */
+.values {
+    margin: 40px 0;
+    text-align: left; /* Align list items to the left */
+}
+
+.values h3 {
+    font-size: 1.8em;
+    color: #3b3b6b;
+    margin-bottom: 15px;
+    text-align: center; /* Center the sub-heading */
+}
+
+.values ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-around; /* Space items evenly */
+    gap: 20px; /* Space between the list items */
+}
+
+.values li {
+    flex: 1; /* Make list items take equal width */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+}
+
+.values li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for bolded keywords in the values list */
+.values li strong {
+    display: block; /* Make the bold text take its own line */
+    font-size: 1.1em;
+    color: #5a5a8a;
+    margin-bottom: 5px;
+}
+
+/* Style for the closing call to action */
+.call-to-action {
+    margin-top: 30px;
+    font-style: italic;
+    color: #666;
+    padding-top: 20px;
+    border-top: 1px dashed #ccc;
+}
+
+
+/* --- Footer Styling --- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+/* --- Global Reset and Base Styles --- */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc; /* Very light background */
+    color: #333;
+}
+
+/* --- Header and Navigation Styling --- */
+header {
+    width: 100%;
+    /* Keep the header width full */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Puts logo on one side, links on the other */
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    height: 40px; /* Adjust based on your logo size */
+    width: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Space between links */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #5a5a8a; /* Use your primary brand color */
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #3b3b6b;
+    border-bottom: 2px solid #5a5a8a;
+}
+
+/* Special styling for the Cart button */
+.cart-btn {
+    background-color: #f0f0ff; /* Light background to highlight */
+    padding: 8px 15px !important;
+    border-radius: 20px;
+    font-weight: bold !important;
+}
+
+.cart-btn:hover {
+    background-color: #e0e0f0;
+    border-bottom: none !important;
+}
+
+#cart-count {
+    color: #cc0000; /* Red color for the count */
+    font-weight: 700;
+}
+
+/* --- Banner Section Styling --- */
+.banner {
+    position: relative; /* Essential for positioning the text over the image */
+    width: 100%;
+    height: 60vh; /* Viewport height for a large visual impact */
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-position: center;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* White text for contrast against the banner image */
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay for readability */
+    border-radius: 10px;
+}
+
+.banner-text h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+
+/* --- Call-to-Action Button Styling --- */
+.btn {
+    display: inline-block;
+    background-color: #cc0000; /* A striking, warm accent color (e.g., ruby red) */
+    color: #fff !important;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #aa0000; /* Darker red on hover */
+    transform: scale(1.05);
+}
+
+/* --- Footer Styling (Reiterated from previous responses) --- */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: #ccc;
+    font-size: 0.85em;
+    margin-top: 50px; /* Space between content and footer */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column; /* Stack logo and nav vertically */
+        padding: 15px;
+    }
+    .navbar ul {
+        gap: 15px;
+        margin-top: 10px;
+        flex-wrap: wrap; /* Allow navigation items to wrap */
+        justify-content: center;
+    }
+    .banner-text h1 {
+        font-size: 2.5em;
+    }
+    .banner-text p {
+        font-size: 1.2em;
+    }
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .about-container {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .values ul {
+        flex-direction: column; /* Stack list items vertically on smaller screens */
+    }
+}
+
+/* === Contact Us Section Styling === */
+
+.contact-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 2.5em;
+    color: #5a5a8a;
+    margin-bottom: 10px;
+}
+
+.contact-container .intro {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Container for the contact cards */
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Styling for each individual contact card */
+.method-card {
+    flex: 1; /* Makes all three cards take equal space */
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.method-card h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #3b3b6b;
+}
+
+.method-card p {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.method-card a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #5a5a8a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.method-card a:hover {
+    background-color: #7b7bbd;
+}
+
+/* Specific styling for visual differentiation (Optional) */
+.email { background-color: #f7f7ff; }
+.instagram { background-color: #fff0f5; }
+.phone { background-color: #f0fff0; }
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .contact-methods {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+    
+    .contact-container {
+        margin: 20px;
+        padding: 20px;
+    }
+}

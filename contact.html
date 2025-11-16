@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - We Made It</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div id="nav-placeholder"></div>
+<script>fetch('components/nav.html').then(r=>r.text()).then(d=>document.getElementById('nav-placeholder').innerHTML=d);</script>
+
+
+<section class="contact-container">
+    <h2>📞 Get in Touch</h2>
+    <p class="intro">
+        We'd love to hear from you! Whether you have a question about an order, a custom jewelry inquiry, or just want to say hello, reach out to us using the methods below.
+    </p>
+
+    <div class="contact-methods">
+        <div class="method-card email">
+            <h3>Email Support</h3>
+            <p>For order questions and general inquiries.</p>
+            <a href="mailto:support@wemadeit.com">support@wemadeit.com</a>
+        </div>
+        
+        <div class="method-card instagram">
+            <h3>Follow Us</h3>
+            <p>See our latest designs and behind-the-scenes updates.</p>
+            <a href="https://instagram.com/wemadeit.jewelry" target="_blank">@wemadeit.jewelry</a>
+        </div>
+        
+        <div class="method-card phone">
+            <h3>Phone</h3>
+            <p>Available Mon-Fri, 9am-5pm.</p>
+            <a href="tel:+201000000000">+20 100 000 0000</a>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+<p>© 2025 We Made It</p>
+</footer>
+</body>
+</html>

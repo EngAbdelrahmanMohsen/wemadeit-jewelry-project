@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop | We Made It</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<!-- Navbar -->
+<div id="nav-placeholder"></div>
+<script>fetch('components/nav.html').then(r=>r.text()).then(d=>document.getElementById('nav-placeholder').innerHTML=d);</script>
+
+
+<section class="shop-container">
+<h2>Our Collection</h2>
+<div class="products-grid">
+
+
+<div class="product-card">
+<img src="assets\products\p1.png" alt="Ring">
+<h3>Golden Leaf Ring</h3>
+<p>$25</p>
+<button onclick="addToCart('Golden Leaf Ring',25,'assets\products\p1.png')">Add to Cart</button>
+</div>
+
+
+<div class="product-card">
+<img src="assets\products\p2.png" alt="Necklace">
+<h3>Crystal Necklace</h3>
+<p>$40</p>
+<button onclick="addToCart('Crystal Necklace',40,'assets\products\p2.png')">Add to Cart</button>
+</div>
+
+
+<div class="product-card">
+<img src="assets\products\p3.png" alt="Bracelet">
+<h3>Handmade Bracelet</h3>
+<p>$30</p>
+<button onclick="addToCart('Handmade Bracelet',30,'assets\products\p3.png')">Add to Cart</button>
+</div>
+
+
+</div>
+</section>
+
+
+<footer>
+<p>© 2025 We Made It — Handmade Jewelry</p>
+</footer>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
