@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | We Made It</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="nav-placeholder"></div>
+<script>
+    fetch('components/nav.html')
+        .then(r => r.text())
+        .then(d => document.getElementById('nav-placeholder').innerHTML = d);
+</script>
+
+<section class="product-page">
+    <div class="product-wrapper">
+
+        <!-- Left: Image -->
+        <div class="product-image">
+            <img src="assets/products/p1.jpg" alt="Product Image">
+        </div>
+
+        <!-- Right: Details -->
+        <div class="product-details">
+            <h2>Golden Leaf Ring</h2>
+            <p class="product-price">$25</p>
+
+            <p class="product-desc">
+                A beautifully handcrafted ring inspired by natural leaf textures.
+                Made with high-quality materials and designed for everyday elegance.
+            </p>
+
+            <button 
+                class="btn"
+                onclick="addToCart('Golden Leaf Ring', 25, 'assets/products/p1.jpg')">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 We Made It — Handmade Jewelry</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
